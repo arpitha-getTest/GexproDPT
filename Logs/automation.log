@@ -1,0 +1,25 @@
+2024-06-21 18:16:24,009 :INFO :Test001Login :*********** Test_001_Login ***********
+2024-06-21 18:16:24,010 :INFO :Test001Login : ************* Verifying Home Page Title ************* 
+2024-06-21 18:16:29,159 :INFO :Test001Login : ************** Home page title test is passed ************* 
+2024-06-21 18:16:29,163 :INFO :Test001Login : ************* Verifying Login test ************* 
+2024-06-21 18:16:36,789 :INFO :Test001Login : *************** Login test is passed ************* 
+2024-06-21 18:39:16,919 :INFO :TestLoginDDT : ************* Verifying Login test by DDT ************* 
+2024-06-21 18:39:54,520 :INFO :TestLoginDDT : ************* Verifying Login test by DDT ************* 
+2024-06-21 18:43:31,314 :INFO :Test002ValidateConsensusPlanningDataSelected : ************* Test_002_Validate_Consensus_Planning_Click *************
+2024-06-21 18:43:36,371 :INFO :Test002ValidateConsensusPlanningDataSelected : *************** Login to the application ***************
+2024-06-21 18:43:39,794 :INFO :Test002ValidateConsensusPlanningDataSelected : *************** Login successful ***************
+2024-06-21 18:43:39,794 :INFO :Test002ValidateConsensusPlanningDataSelected : *************** Click on Consensus Planning block ***************
+2024-06-21 18:43:39,891 :INFO :Test002ValidateConsensusPlanningDataSelected : ************* Clicked on Consensus Planning ************ 
+2024-06-21 18:43:42,048 :ERROR :Test002ValidateConsensusPlanningDataSelected : ************ Home page title test is failed ************* 
+2024-06-21 18:43:44,051 :INFO :Test002ValidateConsensusPlanningDataSelected : ************* Select input values from dropdown ************ 
+2024-06-21 18:43:44,051 :INFO :Test002ValidateConsensusPlanningDataSelected : ********* Click on Apply without selecting Site Node and check Warning message ******* 
+2024-06-21 18:43:44,173 :INFO :Test002ValidateConsensusPlanningDataSelected :Minimum one site node is required.
+2024-06-21 18:43:47,175 :INFO :Test002ValidateConsensusPlanningDataSelected : ************* Select Site Node ************ 
+2024-06-21 18:43:47,329 :INFO :Test002ValidateConsensusPlanningDataSelected : ************* Site Node selected successfully ************ 
+2024-06-21 18:43:47,329 :INFO :Test002ValidateConsensusPlanningDataSelected : ************* Click on Apply without selecting Customer ************ 
+2024-06-21 18:43:47,395 :INFO :Test002ValidateConsensusPlanningDataSelected : ************* Check warning message should appear ************ 
+2024-06-21 18:43:47,431 :INFO :Test002ValidateConsensusPlanningDataSelected :Minimum one customer is required.
+2024-06-21 18:43:51,432 :INFO :Test002ValidateConsensusPlanningDataSelected : ************* Select customer ************ 
+2024-06-21 18:43:53,572 :INFO :Test002ValidateConsensusPlanningDataSelected : ************* Customer selected successfully ************* 
+2024-06-21 18:43:54,573 :INFO :Test002ValidateConsensusPlanningDataSelected : ************* Click on Apply ************* 
+2024-06-21 18:43:54,897 :INFO :Test002ValidateConsensusPlanningDataSelected : ************* Clicked on Apply successfully ************* 

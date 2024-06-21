@@ -14,25 +14,31 @@ class Test002ValidateConsensusPlanningDataSelected(BaseClass):
     logger = LogGen.loggen()
 
     def test_click_consensus_planning(self, setup):
-        self.logger.info(" ************* Test_002_Validate_Consensus_Planning_Click *************")
-        self.driver.get(self.baseURL)
-        self.driver.maximize_window()
-        self.logger.info(" *************** Login to the application ***************")
-        self.lp = LoginPage(self.driver)
-        self.lp.set_user_name(self.username)
-        self.lp.set_password(self.password)
-        self.lp.click_login()
-        time.sleep(1)
-        self.lp.click_ok()
-        time.sleep(2)
-        self.logger.info(" *************** Login successful ***************")
-        self.logger.info(" *************** Click on Consensus Planning block ***************")
-        self.lnp = LandingPage(self.driver)
-        self.lnp.click_consensus_planning_block()
-        self.logger.info(" ************* Clicked on Consensus Planning ************ ")
-        time.sleep(2)
-        self.driver.save_screenshot(".\\Screenshots\\"+"test_homepage_title.png")
-        self.logger.error(" ************ Home page title test is failed ************* ")
+        try:
+            self.logger.info(" ************* Test_002_Validate_Consensus_Planning_Click *************")
+            self.driver.get(self.baseURL)
+            self.driver.maximize_window()
+            self.logger.info(" *************** Login to the application ***************")
+            self.lp = LoginPage(self.driver)
+            self.lp.set_user_name(self.username)
+            self.lp.set_password(self.password)
+            self.lp.click_login()
+            time.sleep(1)
+            self.lp.click_ok()
+            time.sleep(2)
+            self.logger.info(" *************** Login successful ***************")
+            self.logger.info(" *************** Click on Consensus Planning block ***************")
+            self.lnp = LandingPage(self.driver)
+            self.lnp.click_consensus_planning_block()
+            self.logger.info(" ************* Clicked on Consensus Planning ************ ")
+            time.sleep(2)
+            self.driver.save_screenshot(".\\Screenshots\\"+"test_homepage_title.png")
+            self.logger.error(" ************ Home page title test is failed ************* ")
+        except Exception as e:
+            self.logger.info("The error is: ", e)
+            self.driver.save_screenshot(".\\Screenshots\\" + "test_click_consensus_planning.png")
+            self.logger.error(" ************** Click_consensus_planning test is failed ************** ")
+            assert False
 
     def test_select_and_validate_input_data(self):
         try:
@@ -87,4 +93,6 @@ class Test002ValidateConsensusPlanningDataSelected(BaseClass):
 
         except Exception as e:
             self.logger.info("The error is: ", e)
-
+            self.driver.save_screenshot(".\\Screenshots\\" + "test_select_and_validate_input_data.png")
+            self.logger.error(" ************** Select_and_validate_input_data test is failed ************** ")
+            assert False
