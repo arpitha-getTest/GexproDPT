@@ -34,8 +34,6 @@ class Test002ValidateConsensusPlanningDataSelected(BaseClass):
         self.driver.save_screenshot(".\\Screenshots\\"+"test_homepage_title.png")
         self.logger.error(" ************ Home page title test is failed ************* ")
 
-
-
     def test_select_and_validate_input_data(self):
         try:
             time.sleep(2)
